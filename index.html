@@ -14,24 +14,24 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="display-4">0</h1>
-      <p>Inserisci tutti i numeri che ricordi (l'ordine non è importante)</p>
-      <div class="random-numbers d-flex justify-content-center gap-5 flex-wrap my-3">
-        <p class="display-6">1</p>
-        <p class="display-6">2</p>
-        <p class="display-6">3</p>
-        <p class="display-6">4</p>
-        <p class="display-6">5</p>
+      <div>
+        <h1 id="start" class="d-none display-4">Simon Says</h1>
+        <h1 id="timer" class="display-4">30</h1>
+      </div>
+      <div class="d-flex justify-content-center gap-5 flex-wrap my-2">
+        <p id="random-numbers" class="display-6">Clicca start per partire</p>
       </div>
       <div class="d-flex justify-content-center gap-2 flex-wrap my-3">
-        <input type="text" class="form-control number-input text-center" value="22" />
-        <input type="text" class="form-control number-input text-center" value="38" />
-        <input type="text" class="form-control number-input text-center" value="10" />
-        <input type="text" class="form-control number-input text-center" value="21" />
-        <input type="text" class="form-control number-input text-center" value="23" />
+        <input type="text" class="form-control number-input text-center" />
+        <input type="text" class="form-control number-input text-center" />
+        <input type="text" class="form-control number-input text-center" />
+        <input type="text" class="form-control number-input text-center" />
+        <input type="text" class="form-control number-input text-center" />
       </div>
-      <button class="btn btn-primary">Conferma</button>
+      <p>Inserisci tutti i numeri che ricordi (l'ordine non è importante)</p>
+      <button id="start-btn" class="btn btn-primary">Start</button>
       <p class="mt-3 d-none">Hai indovinato 3 numeri! <strong>(22, 38, 23)</strong></p>
+      <script src="./js/script.js"></script>
     </div>
   </body>
 </html>
