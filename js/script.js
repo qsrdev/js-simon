@@ -36,7 +36,7 @@ startBtn.addEventListener("click", function () {
   //ciclo for che si esegue fino a che i = quantity
   for (let i = 0; i <= 5; i++) {
     if (i < 5) {
-      var number = Math.floor(Math.random() * 100) + 1;
+      let number = Math.floor(Math.random() * 100) + 1;
       if (arrNumbers.indexOf(number) === -1) arrNumbers.push(number);
     }
   }
